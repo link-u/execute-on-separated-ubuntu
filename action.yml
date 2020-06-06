@@ -1,0 +1,13 @@
+name: 'Execute a build script'
+description: 'execute a script on prepared ubuntu environment'
+inputs:
+  script:
+    description: 'Relative path of script to execute.'
+    required: true
+  on:
+    description: 'Codename of ubuntu version, e.g. bionic, focal'
+    required: true
+outputs: []
+runs:
+  using: 'docker'
+  image: "Dockerfile"
