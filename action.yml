@@ -1,4 +1,4 @@
-name: 'Execute a build script'
+name: 'Execute a script on separeted ubuntu environment'
 description: 'execute a script on prepared ubuntu environment'
 inputs:
   script:
