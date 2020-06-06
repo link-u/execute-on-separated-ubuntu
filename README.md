@@ -32,7 +32,7 @@ jobs:
           submodules: 'recursive'
           fetch-depth: 0
       - name: Build the binary
-        uses: link-u/
+        uses: link-u/execute-on-separated-ubuntu@v1
         with:
           on: ${{ matrix.codename }}
           script: scripts/build.sh
