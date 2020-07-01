@@ -1,7 +1,7 @@
 #!/bin/sh -eu
 
 echo "::group::Build container"
-docker build -f "/Dockerfile-${INPUT_ON}" -t builder .
+docker build -f "/Dockerfile-${INPUT_ON}" -t builder . 2>&1
 echo "::endgroup::"
 docker run --rm \
   --volume="$RUNNER_WORKSPACE/$(basename $GITHUB_REPOSITORY)":"${GITHUB_WORKSPACE}" \
